@@ -22,7 +22,7 @@ export default class PokemonList extends Component {
           <div className='row'>
             {this.state.pokemon.map(pokemon => (<PokemonCard key={pokemon.name} name ={pokemon.name} url={pokemon.url} />))}
           </div>) :
-          (<h1>Loading pokemon</h1>)}
+          (<h1 style={{textAlign:'center'}}>Loading pokemon...</h1>)}
       </React.Fragment>
     )
   }
